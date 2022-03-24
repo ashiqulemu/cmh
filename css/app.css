@@ -435,4 +435,34 @@
   font-size: 13px;
   color: #fff;
 }
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background: 0 !important;
+  height: 64px;
+  width: 84px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target]:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  width: 100%;
+  list-style: none;
+  background: #1a1a1aad;
+}
 /*# sourceMappingURL=app.css.map */
