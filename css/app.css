@@ -1,3 +1,50 @@
+@font-face {
+  font-family: 'Sinkin Sans-black';
+  src: url(../fonts/SinkinSans-800Black.otf);
+}
+
+@font-face {
+  font-family: 'Sinkin Sans-light-300';
+  src: url(../fonts/SinkinSans-300Light.otf);
+}
+
+@font-face {
+  font-family: 'Sinkin San';
+  src: url(../fonts/SinkinSans-400Regular.otf);
+}
+
+.sinking-bold {
+  font-family: 'Sinkin Sans-black';
+}
+
+.sinking {
+  font-family: 'Sinkin San';
+}
+
+.sinking-light {
+  font-family: 'Sinkin Sans-light-300';
+}
+
+body {
+  font-family: 'Sinkin San';
+}
+
+.linkUp .links {
+  color: #fff;
+}
+
+.linkUp .links a {
+  color: #fff;
+  font-family: 'Sinkin Sans-light-300';
+  text-decoration: none;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.linkUp .links a:hover {
+  color: #ffdd6f;
+}
+
 .siteHeader .nav-item .nav-link {
   text-transform: uppercase;
   font-weight: bold;
@@ -20,6 +67,33 @@
 
 .siteHeader .navCustomRight .nav-item .nav-link:hover {
   color: #080808 !important;
+}
+
+.banner {
+  height: 90vh;
+  background: url(../images/website.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.banner .quote {
+  position: absolute;
+  bottom: 32px;
+  font-size: 18px;
+  color: #fff;
+  font-family: 'Sinkin Sans-black';
+  border: 1px solid #fff;
+  padding: 8px 23px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  right: 50px;
+}
+
+.banner .quote:hover {
+  background-color: #FB514F;
+  color: #fff;
 }
 
 .dropdown-item:hover {
