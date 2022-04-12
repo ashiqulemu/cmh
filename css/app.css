@@ -21,6 +21,24 @@
   font-family: 'Sinkin San';
 }
 
+.text-theme {
+  color: #00404D;
+}
+
+.steps {
+  background: url("../images/bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .steps {
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 .sinking-light {
   font-family: 'Sinkin Sans-light-300';
 }
@@ -81,9 +99,15 @@ body {
   font-weight: normal;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .navCustom .nav-item .nav-link {
-    border-right: 1px solid grey;
+    padding: 0  0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navCustom .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #00404D;
   }
 }
 
@@ -408,7 +432,7 @@ body {
 }
 
 #footer .footer-top {
-  background: #3b3b3b;
+  background: #f3f3f3;
   border-top: 1px solid #474747;
   border-bottom: 1px solid #474747;
   padding: 60px 0 30px 0;
@@ -424,6 +448,7 @@ body {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  color: #00404D;
 }
 
 #footer .footer-top .footer-info p {
@@ -431,13 +456,12 @@ body {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #fff;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #545454;
+  background: #00404D;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -452,14 +476,13 @@ body {
 
 #footer .footer-top .social-links a:hover {
   background: #e96b56;
-  color: #fff;
   text-decoration: none;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #00404D;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -497,10 +520,11 @@ body {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: #00404D;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   display: inline-block;
+  text-decoration: none;
   line-height: 1;
 }
 
@@ -510,6 +534,7 @@ body {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  color: #00404D;
 }
 
 #footer .footer-top .footer-contact p {
