@@ -54,12 +54,11 @@ body {
 }
 
 .siteHeader .nav-item .nav-link:hover {
-  color: #FB514F !important;
+  color: #00404D !important;
 }
 
 .siteHeader .navCustomRight .nav-item .nav-link {
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 16px;
   color: #ffffff;
   padding: 10px 15px;
@@ -67,6 +66,25 @@ body {
 
 .siteHeader .navCustomRight .nav-item .nav-link:hover {
   color: #080808 !important;
+}
+
+@media (max-width: 768px) {
+  #navbarNavDropdown {
+    padding-bottom: 12px;
+  }
+}
+
+.navCustom .nav-item .nav-link {
+  font-family: 'Sinkin San';
+  padding: 0 24px;
+  color: #00404D;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .navCustom .nav-item .nav-link {
+    border-right: 1px solid grey;
+  }
 }
 
 .banner {
@@ -92,12 +110,12 @@ body {
 }
 
 .banner .quote:hover {
-  background-color: #FB514F;
+  background-color: #00404D;
   color: #fff;
 }
 
 .dropdown-item:hover {
-  background-color: #FB514F;
+  background-color: #00404D;
   color: #f9f9f9;
 }
 
@@ -144,7 +162,7 @@ body {
 }
 
 .sectitle {
-  color: #FB514F;
+  color: #00404D;
 }
 
 .projects {
@@ -159,7 +177,7 @@ body {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: 0;
-  background-color: #FB514F;
+  background-color: #00404D;
   color: #f9f9f9 !important;
 }
 
@@ -184,7 +202,7 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #FB514F;
+  background: #00404D;
   padding: 3px 5px;
   font-size: 12px;
   color: #fff;
@@ -221,7 +239,7 @@ body {
 }
 
 .projects .project-box:hover .title {
-  color: #FB514F;
+  color: #00404D;
 }
 
 .projects .project-box:hover img {
@@ -332,7 +350,7 @@ body {
 }
 
 .more-project:hover h5 {
-  color: #FB514F;
+  color: #00404D;
 }
 
 #footer {

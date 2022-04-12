@@ -1,5 +1,5 @@
  
- $primary:#FB514F;
+ $primary:#00404D;
 
 @font-face {
     font-family: 'Sinkin Sans-black';
@@ -61,18 +61,42 @@ body{
      }
      .navCustomRight{
         .nav-item{
+             
             .nav-link{
-                text-transform: uppercase;
-                font-weight: bold;
+
+                text-transform: uppercase; 
                 font-size: 16px;
                 color: #ffffff;
                 padding: 10px 15px;
+                
                 &:hover{
                     color: rgb(8, 8, 8)!important;
                 }
             }
         }
      }
+ }
+
+ #navbarNavDropdown{
+     @media (max-width:768px) {
+         padding-bottom: 12px;
+     }
+ }
+
+ .navCustom{
+    .nav-item{
+            
+        .nav-link{
+            font-family: 'Sinkin San';
+            padding: 0 24px;
+         
+            color: #00404D;
+            font-weight: normal;
+            @media (min-width:768px) {
+                   border-right: 1px solid grey ;
+            }
+        } 
+    }
  }
 
 .banner{
