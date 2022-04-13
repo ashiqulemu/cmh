@@ -63,11 +63,51 @@ body {
   color: #ffdd6f;
 }
 
+.bg-theme {
+  background: #00404D;
+}
+
+.breadcrumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/London-Panoramic-2-2.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 48%, rgba(0, 0, 0, 0.2) 100%), url("../images/London-Panoramic-2-2.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.breadcrumb .inner h2 {
+  font-family: 'Sinkin Sans-black';
+}
+
+.breadcrumb .inner small {
+  font-family: 'Sinkin Sans-light-300';
+}
+
+.breadcrumb .inner a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.infoBox .box {
+  padding: 30px;
+  background: #DDDDDD;
+}
+
 .siteHeader .nav-item .nav-link {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
+  font-family: 'Sinkin Sans-light-300';
   font-size: 16px;
-  color: #464444;
+  color: #00404D;
   padding: 10px 15px;
 }
 
@@ -76,7 +116,7 @@ body {
 }
 
 .siteHeader .navCustomRight .nav-item .nav-link {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 16px;
   color: #ffffff;
   padding: 10px 15px;

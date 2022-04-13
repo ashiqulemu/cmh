@@ -45,8 +45,10 @@ body{
 }
  
 .linkUp{
-    .links{ color:#fff;
-        a{ color:#fff;
+    .links{
+         color:#fff;
+        a{ 
+            color:#fff;
             font-family: 'Sinkin Sans-light-300';
             text-decoration: none;
             margin: 0 20px; 
@@ -59,14 +61,47 @@ body{
 }
 
 
+.bg-theme{
+    background: $primary;
+}
+
+.breadcrumb{
+    background-image: linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.2) 48%,rgba(0,0,0,.2) 100%),url('../images/London-Panoramic-2-2.jpg');
+    min-height: 200px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #fff;
+    .inner{
+        h2{
+            font-family: 'Sinkin Sans-black'; 
+        }
+        small{
+            font-family: 'Sinkin Sans-light-300'; 
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.infoBox{
+    .box{
+        padding: 30px; 
+        background: #DDDDDD;
+    }
+}
  
  .siteHeader{
      .nav-item{
          .nav-link{
-             text-transform: uppercase;
+             text-transform: capitalize;
              font-weight: bold;
+             font-family: 'Sinkin Sans-light-300';
              font-size: 16px;
-             color: #464444;
+             color: $primary;
              padding: 10px 15px;
              &:hover{
                 color: #e96b56;
@@ -78,7 +113,7 @@ body{
              
             .nav-link{
 
-                text-transform: uppercase; 
+                text-transform: capitalize; 
                 font-size: 16px;
                 color: #ffffff;
                 padding: 10px 15px;
