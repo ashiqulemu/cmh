@@ -33,8 +33,8 @@
      background-repeat: no-repeat;
      background-size: contain;
      
-     background-position: 198% 162%; 
-     background-size: 91% 104%;
+     background-position: 378% 100%;
+     background-size: 92% 100%;
 
      @media(max-width:768px) {
          background-size: cover;
@@ -148,15 +148,15 @@
      .navCustomRight {
          .nav-item {
 
-             .nav-link {
-
+             .nav-link { 
                  text-transform: capitalize;
                  font-size: 16px;
                  color: #ffffff;
                  padding: 10px 15px;
 
                  &:hover {
-                     color: rgb(8, 8, 8) !important;
+                     background-color: #e96b56!important;
+                     color: rgb(255, 255, 255) !important; 
                  }
              }
          }
