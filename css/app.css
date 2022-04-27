@@ -30,6 +30,8 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 198% 162%;
+  background-size: 91% 104%;
 }
 
 @media (max-width: 768px) {
@@ -67,6 +69,19 @@ body {
   background: #00404D;
 }
 
+.textAdjust {
+  position: absolute;
+  min-width: 319px;
+  bottom: -74px;
+  color: #1e5e7c;
+}
+
+@media (max-width: 600px) {
+  .textAdjust {
+    position: unset;
+  }
+}
+
 .breadcrumb {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/London-Panoramic-2-2.jpg");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 48%, rgba(0, 0, 0, 0.2) 100%), url("../images/London-Panoramic-2-2.jpg");
@@ -82,6 +97,24 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+}
+
+.breadcrumb.contact {
+  min-height: 230px;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background-size: contain;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/contact.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 48%, rgba(0, 0, 0, 0.2) 100%), url("../images/contact.jpg");
 }
 
 .breadcrumb .inner h2 {
@@ -134,14 +167,14 @@ body {
 
 .navCustom .nav-item .nav-link {
   font-family: 'Sinkin San';
-  padding: 0 24px;
+  padding: 0 13px;
   color: #00404D;
   font-weight: normal;
 }
 
 @media (max-width: 768px) {
   .navCustom .nav-item .nav-link {
-    padding: 0  0 0;
+    padding: 0 0 0;
   }
 }
 
@@ -156,6 +189,13 @@ body {
   background: url(../images/website.jpg);
   background-size: 100% 100%;
   position: relative;
+}
+
+@media (max-width: 1600px) {
+  .banner {
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .banner .quote {
