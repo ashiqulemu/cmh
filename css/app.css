@@ -217,7 +217,7 @@ body {
 }
 
 .banner .quote:hover {
-  background-color: #00404D;
+  background-color: #e96b56 !important;
   color: #fff;
 }
 
