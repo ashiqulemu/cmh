@@ -32,7 +32,7 @@
      background-position: right;
      background-repeat: no-repeat;
      background-size: contain;
-     
+
      background-size: 64% 85%;
 
      @media(max-width:768px) {
@@ -50,8 +50,19 @@
  }
 
  .linkUp {
+    @media (max-width:600px) {
+       .container{
+           padding: 0;
+       }
+    }
      .links {
          color: #fff;
+
+         @media (max-width:600px) {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
 
          a {
              color: #fff;
@@ -59,6 +70,10 @@
              text-decoration: none;
              margin: 0 20px;
              text-align: center;
+             @media (max-width:600px) {
+                margin: 0 4px;
+                font-size: 12px;
+            }
 
              &:hover {
                  color: #ffdd6f;
@@ -72,16 +87,16 @@
      background: $primary;
  }
 
- .textAdjust{
-    position: absolute;
-    min-width: 319px;
-    bottom: 18px;
-    font-size: 12px;
-    color: #1e5e7c;
-    color: #1e5e7c;
-    @media(max-width:600px){
-        position: unset; 
-    }
+ .textAdjust {
+     position: absolute;
+     min-width: 319px;
+     bottom: 18px;
+     font-size: 12px;
+     color: #003B4D; 
+
+     @media(max-width:600px) {
+         position: unset;
+     }
  }
 
  .breadcrumb {
@@ -99,7 +114,7 @@
          display: flex;
          justify-content: center;
          align-items: center;
-         color: #fff; 
+         color: #fff;
          background-size: contain;
          background-image: linear-gradient(180deg, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 48%, rgba(0, 0, 0, .2) 100%), url('../images/contact.jpg');
 
@@ -147,15 +162,15 @@
      .navCustomRight {
          .nav-item {
 
-             .nav-link { 
+             .nav-link {
                  text-transform: capitalize;
                  font-size: 16px;
                  color: #ffffff;
                  padding: 10px 15px;
 
                  &:hover {
-                     background-color: #e96b56!important;
-                     color: rgb(255, 255, 255) !important; 
+                     background-color: #e96b56 !important;
+                     color: rgb(255, 255, 255) !important;
                  }
              }
          }
@@ -201,9 +216,15 @@
      background-size: 100% 100%;
      position: relative;
 
-     @media(max-width:1600px){
-        background-size: cover;
-        background-position: center center;
+     @media(max-width:1600px) {
+         background-size: cover;
+         background-position: center center;
+     }
+
+     @media(max-width:600px) {
+         background: url(../images/bg-mobile.png);
+         background-size: cover;
+         
      }
 
      .quote {
@@ -275,8 +296,41 @@
      background-color: #f9f9f9;
  }
 
+ .slideText {
+     @media(max-width:600px) {
+         h1{
+             text-align: center;
+         }
+         .para  {
+            text-align: center;
+            font-size: 15px;
+         }
+     }
+ }
+
+
+
+ .md-d-none {
+     @media(max-width:600px) {
+         display: none;
+     }
+ }
+
  .sectitle {
      color: $primary;
+     font-size: 38px;
+     line-height: 1;
+     letter-spacing: 0px;
+     display: flex;
+     flex-direction: column; 
+     line-height: 0.8;
+     span {
+         margin-right: 5px;
+     }
+
+     @media(max-width:600px) {
+        font-size: 25px;
+     }
  }
 
  .projects {

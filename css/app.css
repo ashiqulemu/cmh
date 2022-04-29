@@ -48,8 +48,28 @@ body {
   font-family: 'Sinkin San';
 }
 
+@media (max-width: 600px) {
+  .linkUp .container {
+    padding: 0;
+  }
+}
+
 .linkUp .links {
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .linkUp .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .linkUp .links a {
@@ -58,6 +78,13 @@ body {
   text-decoration: none;
   margin: 0 20px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .linkUp .links a {
+    margin: 0 4px;
+    font-size: 12px;
+  }
 }
 
 .linkUp .links a:hover {
@@ -73,8 +100,7 @@ body {
   min-width: 319px;
   bottom: 18px;
   font-size: 12px;
-  color: #1e5e7c;
-  color: #1e5e7c;
+  color: #003B4D;
 }
 
 @media (max-width: 600px) {
@@ -200,6 +226,13 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .banner {
+    background: url(../images/bg-mobile.png);
+    background-size: cover;
+  }
+}
+
 .banner .quote {
   position: absolute;
   bottom: 32px;
@@ -267,8 +300,45 @@ body {
   background-color: #f9f9f9;
 }
 
+@media (max-width: 600px) {
+  .slideText h1 {
+    text-align: center;
+  }
+  .slideText .para {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .md-d-none {
+    display: none;
+  }
+}
+
 .sectitle {
   color: #00404D;
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 0.8;
+}
+
+.sectitle span {
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .sectitle {
+    font-size: 25px;
+  }
 }
 
 .projects {
