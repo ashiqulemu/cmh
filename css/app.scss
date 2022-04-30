@@ -87,6 +87,11 @@
      background: $primary;
  }
 
+ .lh{
+    @media(max-width:600px) { 
+       line-height: 1.2!important;
+    } 
+ }
  .textAdjust {
      position: absolute;
      min-width: 319px;
@@ -96,6 +101,7 @@
 
      @media(max-width:600px) {
          position: unset;
+        line-height: 0.4!important;
      }
  }
 

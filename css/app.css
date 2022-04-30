@@ -95,6 +95,12 @@ body {
   background: #00404D;
 }
 
+@media (max-width: 600px) {
+  .lh {
+    line-height: 1.2 !important;
+  }
+}
+
 .textAdjust {
   position: absolute;
   min-width: 319px;
@@ -106,6 +112,7 @@ body {
 @media (max-width: 600px) {
   .textAdjust {
     position: unset;
+    line-height: 0.4 !important;
   }
 }
 
