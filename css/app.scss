@@ -245,7 +245,7 @@
 
      @media(max-width:1600px) {
          background-size: cover; 
-         background-position: center top;
+         background-position: top center;
      }
 
      @media(max-width:600px) {
@@ -267,6 +267,7 @@
          font-weight: bold;
          text-decoration: none;
          right:22px;
+         
 
          &:hover {
              background-color: #e96b56 !important;
