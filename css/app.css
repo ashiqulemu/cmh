@@ -56,6 +56,12 @@ body {
 
 .linkUp .links {
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 600px) {
@@ -63,9 +69,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -182,6 +185,34 @@ body {
   color: #e96b56;
 }
 
+.siteHeader .navCustomRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .siteHeader .navCustomRight {
+    width: 100%;
+  }
+}
+
+.siteHeader .navCustomRight .nav-item.simple-link .nav-link {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #17404d;
+  padding: 10px 15px;
+}
+
+.siteHeader .navCustomRight .nav-item.simple-link .nav-link:hover {
+  background-color: #00414C !important;
+  color: white !important;
+}
+
 .siteHeader .navCustomRight .nav-item .nav-link {
   text-transform: capitalize;
   font-size: 16px;
@@ -229,7 +260,7 @@ body {
 @media (max-width: 1600px) {
   .banner {
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
   }
 }
 
@@ -242,7 +273,7 @@ body {
 
 .banner .quote {
   position: absolute;
-  bottom: 32px;
+  bottom: 22px;
   font-size: 18px;
   color: #fff;
   font-family: 'Sinkin Sans-black';
@@ -252,7 +283,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  right: 50px;
+  right: 22px;
 }
 
 .banner .quote:hover {

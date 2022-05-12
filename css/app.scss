@@ -57,10 +57,11 @@
     }
      .links {
          color: #fff;
+         display: flex;
+         justify-content: space-between;
 
          @media (max-width:600px) {
              display: flex;
-             justify-content: center;
              align-items: center;
          }
 
@@ -166,7 +167,27 @@
      }
 
      .navCustomRight {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        @media (max-width:1200px) {
+            width:100%; 
+        }
          .nav-item {
+
+            &.simple-link{
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    color: #17404d;
+                    padding: 10px 15px;
+   
+                    &:hover {
+                        background-color: #00414C!important;
+                        color: rgb(255, 255, 255) !important;
+                    }
+                }
+            }
 
              .nav-link {
                  text-transform: capitalize;
@@ -223,8 +244,8 @@
      position: relative;
 
      @media(max-width:1600px) {
-         background-size: cover;
-         background-position: center center;
+         background-size: cover; 
+         background-position: center top;
      }
 
      @media(max-width:600px) {
@@ -235,7 +256,7 @@
 
      .quote {
          position: absolute;
-         bottom: 32px;
+         bottom: 22px;
          font-size: 18px;
          color: #fff;
          font-family: 'Sinkin Sans-black';
@@ -245,7 +266,7 @@
          text-transform: uppercase;
          font-weight: bold;
          text-decoration: none;
-         right: 50px;
+         right:22px;
 
          &:hover {
              background-color: #e96b56 !important;
