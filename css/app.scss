@@ -31,9 +31,8 @@
      background: url('../images/bg.png');
      background-position: right;
      background-repeat: no-repeat;
-     background-size: contain;
-
-     background-size: 64% 85%;
+     background-size: contain; 
+     background-size: 56% 110%;
 
      @media(max-width:768px) {
          background-size: cover;
