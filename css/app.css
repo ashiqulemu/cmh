@@ -772,7 +772,7 @@ body {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 42px;
+  bottom: 60px;
   left: 0;
   z-index: 2;
   display: -webkit-box;
