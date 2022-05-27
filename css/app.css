@@ -152,7 +152,7 @@ body {
   overflow: hidden;
 }
 
-.breadcrumb.contact {
+.breadcrumb.imageContent {
   min-height: 230px;
   background-attachment: fixed;
   display: -webkit-box;
@@ -167,7 +167,7 @@ body {
   color: #fff;
 }
 
-.breadcrumb.contact .cover {
+.breadcrumb.imageContent .cover {
   z-index: -1;
   pointer-events: none;
   position: absolute;
@@ -178,7 +178,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .breadcrumb.contact .cover {
+  .breadcrumb.imageContent .cover {
     left: unset;
   }
 }
