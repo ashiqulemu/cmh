@@ -136,8 +136,6 @@ body {
 }
 
 .breadcrumb {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/London-Panoramic-2-2.jpg");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 48%, rgba(0, 0, 0, 0.2) 100%), url("../images/London-Panoramic-2-2.jpg");
   min-height: 200px;
   background-attachment: fixed;
   display: -webkit-box;
@@ -150,6 +148,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .breadcrumb.contact {
@@ -165,9 +165,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  background-size: contain;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(48%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/contact.jpg");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 48%, rgba(0, 0, 0, 0.2) 100%), url("../images/contact.jpg");
+}
+
+.breadcrumb.contact .cover {
+  z-index: -1;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb.contact .cover {
+    left: unset;
+  }
 }
 
 .breadcrumb .inner h2 {
